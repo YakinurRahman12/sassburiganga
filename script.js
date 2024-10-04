@@ -1,3 +1,6 @@
+gsap.to("img",{
+    backgroundColor: "DarkOrange"
+})
 gsap.to("h1",{
     x:600,
     duration:2,
@@ -22,7 +25,7 @@ gsap.to("p",{
 })
 gsap.to("h1",{
     y:-83,
-    x:-500,
+    x:-2,
     duration:3,
     delay:10,
     backgroundColor: "orange"
@@ -33,7 +36,7 @@ gsap.to("li",{
     delay:13,
 })
 gsap.to("img",{
-    y:250,
+    y:270,
     duration:2,
     delay:16,
     rotate:360
