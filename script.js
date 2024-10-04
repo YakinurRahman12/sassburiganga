@@ -1,65 +1,77 @@
-gsap.to("img",{
+var tl = gsap.timeline()
+tl.to("img",{
     backgroundColor: "DarkOrange"
 })
-gsap.to("h1",{
+tl.from("img",{
+    scale:0,
+    rotate:720,
+    duration:1,
+    
+})
+tl.to("h1",{
     x:600,
     duration:2,
-    delay:0
 })
-gsap.to("img",{
+tl.to("img",{
     x: 505,
     duration: 3,
-    delay:2,
     rotate:360,
     backgroundColor: "blue"
 })
-gsap.to("h2",{
+tl.to("h2",{
     y:-250,
     duration:1,
-    delay:5,
-    color:"DeepSkyBlue",
+    color:"Navy",
     stagger: 1
     
 })
-gsap.to("p",{
+tl.to("p",{
     y:-250,
     duration:3,
-    delay:7
+    color:"black"
 })
-gsap.to("h1",{
+tl.to("h1",{
     y:-83,
     x:-2,
-    duration:3,
-    delay:10,
+    duration:2,
     backgroundColor: "orange",
     borderRadius: "50%",
 })
-gsap.to("li",{
+tl.to("li",{
     y:-250,
     duration:3,
-    delay:13,
     stagger:-0.2,
 })
 gsap.to("img",{
     y:270,
+    delay:15,
     duration:2,
-    delay:16,
     rotate:360
 })
-gsap.to("img",{
+tl.to("img",{
     x:-30,
     duration:1.5,
-    delay:18,
     rotate:0,
-    scale:0.7,
+    scale:0.5,
     backgroundColor: "PaleTurquoise",
    
 })
-gsap.to("img",{
-    x: -300,
-    delay:20,
+tl.to("img",{
+    x: -240,
     duration:1,
+    scale:0.6,
     repeat: -1,
     yoyo: true,
 })
-
+tl.to("li",{
+    opacity:0,
+    delay:1,
+    duration:4,
+    x:50,
+    stagger:1,
+    repeat:-1,
+    scrollTrigger:{
+        trigger:"li",
+        start: "Top 80%",
+        end: "Top 40%",        
+    }})
