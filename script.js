@@ -15,8 +15,11 @@ gsap.to("img",{
 })
 gsap.to("h2",{
     y:-250,
-    duration:2,
-    delay:5
+    duration:1,
+    delay:5,
+    color:"DeepSkyBlue",
+    stagger: 1
+    
 })
 gsap.to("p",{
     y:-250,
@@ -28,12 +31,14 @@ gsap.to("h1",{
     x:-2,
     duration:3,
     delay:10,
-    backgroundColor: "orange"
+    backgroundColor: "orange",
+    borderRadius: "50%",
 })
 gsap.to("li",{
     y:-250,
     duration:3,
     delay:13,
+    stagger:-0.2,
 })
 gsap.to("img",{
     y:270,
@@ -45,6 +50,16 @@ gsap.to("img",{
     x:-30,
     duration:1.5,
     delay:18,
+    rotate:0,
     scale:0.7,
-    backgroundColor: "PaleTurquoise"
+    backgroundColor: "PaleTurquoise",
+   
 })
+gsap.to("img",{
+    x: -300,
+    delay:20,
+    duration:1,
+    repeat: -1,
+    yoyo: true,
+})
+
