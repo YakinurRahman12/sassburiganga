@@ -57,11 +57,12 @@ tl.to("img",{
    
 })
 tl.to("img",{
-    x: -240,
-    duration:1,
-    scale:0.6,
+    
+    duration:2,
+    scale:1,
     repeat: -1,
-    yoyo: true,
+    
+   
 })
 tl.to("li",{
     opacity:0,
