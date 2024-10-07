@@ -43,9 +43,9 @@ tl.to("li",{
     stagger:-0.2,
 })
 gsap.to("img",{
-    y:270,
+    y:290,
     delay:15,
-    duration:2,
+    duration:1,
     rotate:360
 })
 tl.to("img",{
